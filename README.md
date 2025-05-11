@@ -12,7 +12,7 @@ Where:
 - `string` is the string to search for.
 - `--recursive` (optional) will search for the string in all subdirectories.
 - `--dir $DIR` (optional) is the directory to search in. Defaults to the current directory.
-- `--tesseract $DIR` (optional) is the directory of tesseract, only needed if it's not in the path or TESSERACT_DIR environment variable.
+- `--tesseract $EXE` (optional) is the path to the tesseract executable, only needed if it's not in the path or TESSERACT_EXE environment variable.
 
 
 
@@ -24,8 +24,8 @@ Tesseract MUST be installed separately.
 
 Then, tesseract directory must either be:
 - In the path
-- In the folder of `TESSERACT_DIR` environment variable
-- Given as `--tesseract $DIR` CLI Option
+- In the folder of `TESSERACT_EXE` environment variable
+- Given as `--tesseract $EXE` CLI Option
 
 This tool itself can be installed with pip:
 
