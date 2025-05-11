@@ -1,7 +1,7 @@
 [project]
 name = "pic-search"
 version = "0.1.0"
-description = "Add your description here"
+description = "Search the text of images in your folder."
 readme = "README.md"
 authors = [
     { name = "Ryan Stolliker", email = "ryan.stolliker@gmail.com" }
