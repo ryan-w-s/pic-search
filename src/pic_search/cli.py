@@ -1,6 +1,7 @@
 import argparse
 import os
 import shutil
+import logging
 
 def _resolve_provided_tesseract_path(provided_path: str | None) -> str | None:
     """
@@ -59,6 +60,12 @@ def parse_args():
     )
 
     args = parser.parse_args()
+
+    # Configure logging based on verbose flag
+    logging.basicConfig(
+        level=logging.DEBUG if args.verbose else logging.INFO,
+        format='%(message)s'  # Simple format without timestamp/level for cleaner output
+    )
 
     tesseract_executable_path = _resolve_provided_tesseract_path(args.tesseract)
 

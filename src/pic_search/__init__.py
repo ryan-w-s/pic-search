@@ -1,10 +1,11 @@
 from .cli import parse_args
 import sys
+import logging
 
 def main() -> None:
     try:
         args = parse_args()
-        print(args)
+        logging.debug(f"Arguments: {args}")
     except ValueError as e:
-        print(f"Error: {e}", file=sys.stderr)
+        logging.error(str(e))
         sys.exit(1)
