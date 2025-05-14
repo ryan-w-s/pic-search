@@ -5,7 +5,7 @@ Search the text of images in your folder.
 ## Usage
 
 ```
-pic-search "string" [--recursive] [--dir $DIR] [--tesseract $DIR]
+pic-search "string" [--recursive] [--dir $DIR] [--tesseract $DIR] [--verbose]
 ```
 
 Where:
@@ -13,7 +13,7 @@ Where:
 - `--recursive` (optional) will search for the string in all subdirectories.
 - `--dir $DIR` (optional) is the directory to search in. Defaults to the current directory.
 - `--tesseract $EXE` (optional) is the path to the tesseract executable, only needed if it's not in the path or TESSERACT_EXE environment variable.
-
+- `--verbose` (optional) will print more information to the console.
 
 
 ## Installation
@@ -30,12 +30,12 @@ Then, tesseract directory must either be:
 This tool itself can be installed with pip:
 
 ```
-pip install pic-search
+pip install pic-search-ocr
 ```
 
 Or any similar package manager, like `uv`:
 
 ```
-uv pip install pic-search
+uv pip install pic-search-ocr
 ```
 
