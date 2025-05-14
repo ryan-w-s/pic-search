@@ -39,3 +39,7 @@ Or any similar package manager, like `uv`:
 uv pip install pic-search-ocr
 ```
 
+```
+uv tool install pic-search-ocr
+```
+
